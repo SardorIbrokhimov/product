@@ -21,21 +21,15 @@ class _SideBarState extends State<SideBar> {
           ListView(
             children: [
               UserAccountsDrawerHeader(
-                currentAccountPicture: ClipOval(
-                  child: Image.network(
-                    "https://avatars.mds.yandex.net/i?id=54f067d3eccc508fda69a15c38e013f2-5283550-images-thumbs&n=13",
-                    fit: BoxFit.cover,
-                  ),
-                ),
-                accountName: Text("Sardor"),
-                accountEmail: Text("** *** ** **"),
+                currentAccountPicture: Container(
+
+                  
+      ),
+                accountName: Text(""),
+                accountEmail: Text(""),
                 decoration: BoxDecoration(
-                    image: DecorationImage(
-                      fit: BoxFit.cover,
-                      image: NetworkImage(
-                        "https://avatars.mds.yandex.net/i?id=e8529e4d7821e344f1cc64ea29983097-5869756-images-thumbs&n=13",
-                      ),
-                    )),
+                    color: Colors.red.withOpacity(0.2)
+                ),
               ),
               ListTile(
                 title: Text(
